@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Wheesly</title>
+    <link rel="stylesheet" href="servicios.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">🚗 Wheesly</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="vehiculos.html">Vehículos</a></li>
+                    <li><a href="servicios.html" class="active">Servicios</a></li>
+                    <li><a href="finaciamento.html">Financiamiento</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Información</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="terminos.html">Términos de la Empresa</a></li>
+                            <li><a href="privacidad.html">Política de Privacidad</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <h1>Servicios Automotrices</h1>
+            <p>Mantenimiento especializado y reparaciones de calidad para mantener tu vehículo en perfectas condiciones</p>
+            <a href="#servicios" class="cta-button">Ver Servicios</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="servicios">
+        <div class="section-header fade-in">
+            <h2>Nuestros Servicios</h2>
+            <p>Ofrecemos una gama completa de servicios automotrices con tecnología de vanguardia y personal especializado</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Mantenimiento Preventivo" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">🔧</div>
+                    <h3>Mantenimiento Preventivo</h3>
+                    <p>Servicios regulares para mantener tu vehículo en óptimas condiciones y prevenir averías costosas.</p>
+                    <ul class="service-features">
+                        <li>Cambio de aceite y filtros</li>
+                        <li>Revisión de frenos</li>
+                        <li>Inspección general</li>
+                        <li>Afinamiento del motor</li>
+                    </ul>
+                    <div class="service-price">Desde S/. 150</div>
+                    <button class="service-button" onclick="solicitarServicio('Mantenimiento Preventivo')">Solicitar Cita</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Reparaciones Mecánicas" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Reparaciones Mecánicas</h3>
+                    <p>Diagnóstico y reparación especializada de cualquier problema mecánico de tu vehículo.</p>
+                    <ul class="service-features">
+                        <li>Diagnóstico computarizado</li>
+                        <li>Reparación de motor</li>
+                        <li>Sistema de transmisión</li>
+                        <li>Suspensión y dirección</li>
+                    </ul>
+                    <div class="service-price">Desde S/. 200</div>
+                    <button class="service-button" onclick="solicitarServicio('Reparaciones Mecánicas')">Solicitar Cita</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="sistemaelectrico.jpg" alt="Sistema Eléctrico" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">🔋</div>
+                    <h3>Sistema Eléctrico</h3>
+                    <p>Especialistas en sistemas eléctricos y electrónicos de vehículos modernos.</p>
+                    <ul class="service-features">
+                        <li>Diagnóstico eléctrico</li>
+                        <li>Reparación de alternador</li>
+                        <li>Sistema de arranque</li>
+                        <li>Aire acondicionado</li>
+                    </ul>
+                    <div class="service-price">Desde S/. 120</div>
+                    <button class="service-button" onclick="solicitarServicio('Sistema Eléctrico')">Solicitar Cita</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="neumaticos.jpg" alt="Neumáticos y Alineación" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">🛞</div>
+                    <h3>Neumáticos y Alineación</h3>
+                    <p>Servicio completo de neumáticos, balanceado y alineación para tu seguridad.</p>
+                    <ul class="service-features">
+                        <li>Cambio de neumáticos</li>
+                        <li>Alineación computarizada</li>
+                        <li>Balanceado de ruedas</li>
+                        <li>Rotación de neumáticos</li>
+                    </ul>
+                    <div class="service-price">Desde S/. 80</div>
+                    <button class="service-button" onclick="solicitarServicio('Neumáticos y Alineación')">Solicitar Cita</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Lavado y Detailing" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">🧽</div>
+                    <h3>Lavado y Detailing</h3>
+                    <p>Servicios de limpieza profesional y detailing para mantener tu vehículo impecable.</p>
+                    <ul class="service-features">
+                        <li>Lavado completo</li>
+                        <li>Encerado profesional</li>
+                        <li>Limpieza interior</li>
+                        <li>Tratamiento de cuero</li>
+                    </ul>
+                    <div class="service-price">Desde S/. 50</div>
+                    <button class="service-button" onclick="solicitarServicio('Lavado y Detailing')">Solicitar Cita</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="revisiontecnica.jpg" alt="Revisión Técnica" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">📋</div>
+                    <h3>Revisión Técnica</h3>
+                    <p>Preparación y asistencia para la revisión técnica vehicular obligatoria.</p>
+                    <ul class="service-features">
+                        <li>Pre-inspección completa</li>
+                        <li>Corrección de fallas</li>
+                        <li>Emisiones de gases</li>
+                        <li>Acompañamiento al CITV</li>
+                    </ul>
+                    <div class="service-price">Desde S/. 180</div>
+                    <button class="service-button" onclick="solicitarServicio('Revisión Técnica')">Solicitar Cita</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop Section -->
+    <section class="workshop-section">
+        <div class="workshop-container">
+            <div class="workshop-content">
+                <h2>Nuestro Taller</h2>
+                <p>Contamos con instalaciones modernas y equipos de última tecnología para brindar el mejor servicio automotriz.</p>
+                <p>Nuestro taller está equipado con herramientas especializadas y cuenta con técnicos certificados con más de 10 años de experiencia.</p>
+                
+                <div class="workshop-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🔬</span>
+                        <h4>Diagnóstico Avanzado</h4>
+                        <p>Scanner computarizado</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🏭</span>
+                        <h4>5 Bahías de Servicio</h4>
+                        <p>Capacidad para múltiples vehículos</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <h4>Equipo Especializado</h4>
+                        <p>Herramientas de última generación</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🛡️</span>
+                        <h4>Garantía de Servicio</h4>
+                        <p>Respaldamos nuestro trabajo</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="workshop-image">
+                <img src="nuestrotaller.jpg" alt="Nuestro Taller Wheesly" loading="lazy">
+                <div class="workshop-overlay">
+                    <h3>Taller Profesional</h3>
+                    <p>Equipamiento de última tecnología</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="section-header">
+            <h2>Nuestro Equipo</h2>
+            <p>Técnicos especializados y certificados con años de experiencia</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Carlos Mendoza" loading="lazy">
+                </div>
+                <div class="member-name">Carlos Mendoza</div>
+                <div class="member-role">Jefe de Taller</div>
+                <div class="member-experience">15 años de experiencia en mecánica automotriz. Especialista en motores Toyota y Nissan.</div>
+            </div>
+
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Ana Rodríguez" loading="lazy">
+                </div>
+                <div class="member-name">Ana Rodríguez</div>
+                <div class="member-role">Especialista Eléctrica</div>
+                <div class="member-experience">12 años en sistemas eléctricos. Certificada en diagnóstico computarizado avanzado.</div>
+            </div>
+
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Miguel Torres" loading="lazy">
+                </div>
+                <div class="member-name">Miguel Torres</div>
+                <div class="member-role">Técnico Senior</div>
+                <div class="member-experience">10 años en reparaciones mecánicas. Experto en transmisiones y suspensión.</div>
+            </div>
+
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Laura Silva" loading="lazy">
+                </div>
+                <div class="member-name">Laura Silva</div>
+                <div class="member-role">Técnica de Frenos</div>
+                <div class="member-experience">8 años especializándose en sistemas de frenos y seguridad vehicular.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="process-container">
+            <div class="section-header">
+                <h2>Nuestro Proceso</h2>
+                <p>Un proceso sistemático para garantizar la calidad del servicio</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <span class="step-icon">📞</span>
+                    <h4>Reserva tu Cita</h4>
+                    <p>Agenda tu servicio por teléfono, WhatsApp o nuestro formulario web</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <span class="step-icon">🔍</span>
+                    <h4>Diagnóstico Inicial</h4>
+                    <p>Evaluamos tu vehículo y determinamos los servicios necesarios</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <span class="step-icon">💰</span>
+                    <h4>Presupuesto</h4>
+                    <p>Te proporcionamos un presupuesto detallado antes de iniciar</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <span class="step-icon">🔧</span>
+                    <h4>Ejecución</h4>
+                    <p>Realizamos el trabajo con repuestos originales y herramientas especializadas</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <span class="step-icon">✅</span>
+                    <h4>Control de Calidad</h4>
+                    <p>Verificamos que todo funcione perfectamente antes de la entrega</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <span class="step-icon">🚗</span>
+                    <h4>Entrega</h4>
+                    <p>Te entregamos tu vehículo con garantía y recomendaciones de mantenimiento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="services-section">
+        <div class="section-header">
+            <h2>¿Necesitas algún servicio?</h2>
+            <p>Agenda tu cita ahora y mantén tu vehículo en perfectas condiciones</p>
+            <div style="margin-top: 2rem;">
+                <a href="contacto.html" class="cta-button pulse">Agendar Cita</a>
+                <a href="tel:+51123456789" class="cta-button" style="margin-left: 1rem; background: linear-gradient(45deg, #22c55e, #16a34a);">Llamar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Wheesly</h3>
+                <p>Tu concesionaria de confianza desde 2008. Comprometidos con la excelencia y la satisfacción del cliente.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" class="social-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" class="social-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" class="social-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" class="social-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="vehiculos.html">Vehículos</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="finaciamento.html">Financiamiento</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Información</h3>
+                <a href="terminos.html">Términos de la Empresa</a>
+                <a href="privacidad.html">Política de Privacidad</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📍 Av. Principal 123, Lima, Perú</p>
+                <p>📞 +51 1 234 5678</p>
+                <p>✉️ info@wheesly.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wheesly. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="servicios.js"></script>
+</body>
+</html>
